@@ -14,7 +14,7 @@ func Ternary(condition bool, result1 interface{}, result2 interface{}) interface
 
 func IsFalsy(params interface{}) bool {
 	var err error
-	errNew := errors.New("Err1")
+	errNew := errors.New("")
 	result := false
 	switch params {
 	case "", nil, 0:
