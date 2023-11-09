@@ -17,7 +17,7 @@ func IsFalsy(params interface{}) bool {
 	errNewString := errors.New("")
 	result := false
 	switch params {
-	case "", nil, 0:
+	case "", nil, 0, false:
 		result = true
 	default:
 		if reflect.TypeOf(params) == reflect.TypeOf(errNewString) || reflect.TypeOf(params) == reflect.TypeOf(err) {
